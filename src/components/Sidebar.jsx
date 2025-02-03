@@ -23,6 +23,18 @@ export default function Sidebar() {
 
   // TODO: 1 Render inside the outer div an unordered list of the menu items, with each string in the array
   // its own item.
+  import React from 'react';
+  function MenuList({ intialMenuItems }) {
+    return(
+      <ul>
+        {initialMenuItems.map((item, index) => (
+        <li key={index}></li>
+        ))}
+        </ul>
+      );
+  }
+  export default MenuList;
+      
   return (
     <div>
       <input
